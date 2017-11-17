@@ -14,3 +14,5 @@ coordinate system.
 var svgContainer = d3.select("body").append("svg").attr("width", 200).attr("height", 200)
 
 3. svgContainer.selectAll("circle").data(dataSet).enter().append("circle")
+
+4. the date is 0 indexed.
