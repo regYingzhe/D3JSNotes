@@ -16,3 +16,10 @@ var svgContainer = d3.select("body").append("svg").attr("width", 200).attr("heig
 3. svgContainer.selectAll("circle").data(dataSet).enter().append("circle")
 
 4. the date is 0 indexed.
+
+5. d3 axis: d3.select("body").append("svg")
+           .attr("width", 200).attr("height", 200)
+           .append("g")
+           .call(d3.svg.axis())
+6. d3.svg.axis().orient([orientation])
+7. 
