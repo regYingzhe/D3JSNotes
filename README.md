@@ -22,4 +22,5 @@ var svgContainer = d3.select("body").append("svg").attr("width", 200).attr("heig
            .append("g")
            .call(d3.svg.axis())
 6. d3.svg.axis().orient([orientation])
-7. 
+7. scale: d3.scale.linear().domain([]).range([])
+d3.time.scale()
