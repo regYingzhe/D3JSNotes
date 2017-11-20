@@ -43,4 +43,8 @@ el.addEventListener("click", sayCupcake, false)
 11. el.addEventListener("click", sayCupcake, false) which is
 target.addEventListener(type, listener[, useCapture])
 
-12.
+12. One - Event Listeners from the Capture Phase are executed before Event Listeners from the Bubbling Phase
+
+Two - Event Listeners are executed in order of definition
+
+Three - Capture Phase overrides definition order if there are Bubbling Phase Event Listeners defined earlier than the Capture Phase event listeners.
