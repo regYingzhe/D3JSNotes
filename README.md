@@ -30,4 +30,12 @@ d3.time.scale()
 <a href="#" id="myLink">Click Me </a>
 <script>
 document.getElementById("myLink").onclick = function(){alert("clicked")}
+document.getElementById("myLink").onclick = function(){alert("clicked1")}
+</script>
+drawback is that overwrite the previous listener.
+10. <a href="#" id="myLink">Click Me </a>
+<script>
+var el = docuent.getElementById("myLink");
+function sayCupcake() {alert("cupcake");}
+el.addEventListener("click", sayCupcake, false)
 </script>
