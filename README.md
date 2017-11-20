@@ -25,4 +25,9 @@ var svgContainer = d3.select("body").append("svg").attr("width", 200).attr("heig
 7. scale: d3.scale.linear().domain([]).range([])
 d3.time.scale()
 8. DOM Level 0 Event listener:
-<a href="#" onclick="alert("clicked");">Click Me </a>
+<a href="#" onclick="alert("clicked")">Click Me </a>
+9. DOM Level 1 Event listener:
+<a href="#" id="myLink">Click Me </a>
+<script>
+document.getElementById("myLink").onclick = function(){alert("clicked")}
+</script>
