@@ -39,3 +39,8 @@ var el = docuent.getElementById("myLink");
 function sayCupcake() {alert("cupcake");}
 el.addEventListener("click", sayCupcake, false)
 </script>
+
+11. el.addEventListener("click", sayCupcake, false) which is
+target.addEventListener(type, listener[, useCapture])
+
+12.
