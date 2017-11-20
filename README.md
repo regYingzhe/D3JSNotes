@@ -24,3 +24,5 @@ var svgContainer = d3.select("body").append("svg").attr("width", 200).attr("heig
 6. d3.svg.axis().orient([orientation])
 7. scale: d3.scale.linear().domain([]).range([])
 d3.time.scale()
+8. DOM Level 0 Event listener:
+<a href="#" onclick="alert("clicked");">Click Me </a>
