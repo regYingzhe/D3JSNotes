@@ -48,3 +48,14 @@ target.addEventListener(type, listener[, useCapture])
 Two - Event Listeners are executed in order of definition
 
 Three - Capture Phase overrides definition order if there are Bubbling Phase Event Listeners defined earlier than the Capture Phase event listeners.
+13. var force = d3.layout.force() // construcate new force layout
+.nodes(nodes) // sets nodes for layout
+.links(links) // sets links for associate array
+.size([w, h]) // can be dynamic size with jquery
+.linkStrength(0.1) // rigidity of the link
+.linkDistance(20) // target distance between nodes
+.charge(-30) // how hard they repel them together
+.gravity(0.1) // sets the how hard they attrack with each together
+.start() ;; start the simulation
+
+
