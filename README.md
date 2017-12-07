@@ -58,4 +58,11 @@ Three - Capture Phase overrides definition order if there are Bubbling Phase Eve
 .gravity(0.1) // sets the how hard they attrack with each together
 .start() ;; start the simulation
 
+14. M = Move the pen to new location
+- Required for all paths
+- params = x, y
+
+A = Elliptical Arc Command
+- Draws an arc from current point
+- params = rx ry x-axis rotation
 
