@@ -66,3 +66,4 @@ A = Elliptical Arc Command
 - Draws an arc from current point
 - params = rx ry x-axis rotation
 
+15. == just compare with the value, but === compare both value and type
