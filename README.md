@@ -26,7 +26,7 @@ var svgContainer = d3.select("body").append("svg").attr("width", 200).attr("heig
 d3.time.scale()
 8. DOM Level 0 Event listener:
 <a href="#" onclick="alert("clicked")">Click Me </a>
-9. DOM Level 1 Event listener:
+9. DOM Level 1 Event listener: (solve the seperation of concerns issues for Level One event listener)
 <a href="#" id="myLink">Click Me </a>
 <script>
 document.getElementById("myLink").onclick = function(){alert("clicked")}
@@ -41,11 +41,13 @@ el.addEventListener("click", sayCupcake, false)
 </script>
 
 11. el.addEventListener("click", sayCupcake, false) which is
-target.addEventListener(type, listener[, useCapture])
+target.addEventListener(type, listener[, useCapture]) 
+useCapture means whether to trigger the event listener during the capture phase. 
 
+--- capture phase, target phase, bubbling phase ---
 12. One - Event Listeners from the Capture Phase are executed before Event Listeners from the Bubbling Phase
 
-Two - Event Listeners are executed in order of definition
+Two - Event Listeners are executed in order of definition 
 
 Three - Capture Phase overrides definition order if there are Bubbling Phase Event Listeners defined earlier than the Capture Phase event listeners.
 13. var force = d3.layout.force() // construcate new force layout
