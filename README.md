@@ -69,3 +69,9 @@ A = Elliptical Arc Command
 - params = rx ry x-axis rotation
 
 15. == just compare with the value, but === compare both value and type
+16. lay_one = [{}, {}]
+lay_two = [{}, {}]
+layers = [lay_one, layer_two];
+var stack = d3.layout.stack()
+stack(layers) will do all the math behind sense. Experience: drawing the goal on the paper, 
+from the real data set, make a small data set to do the test first. 
